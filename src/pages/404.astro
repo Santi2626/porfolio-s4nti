@@ -1,0 +1,40 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			body {
+				background-color: #000000; /* Cambiar a tu color de fondo oscuro */
+				color: white; /* Cambiar a tu color de texto blanco */
+				margin: 0;
+				padding: 0;
+				font-family: 'Arial', sans-serif; /* Cambiar a tu fuente preferida si es necesario */
+			}
+
+			h1 {
+				color: white; /* Asegurarse de que el color del texto para h1 también sea blanco */
+			}
+		</style>
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1> Error 404 not found </h1>
+			<p>
+				Por aqui no es busca dale al incio 
+			</p>
+			
+			<img src="https://ricky-music.vercel.app/a.gif" />
+			
+		</main>
+		<Footer />
+	</body>
+</html
